@@ -1,0 +1,149 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+/*Global css section*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,p,span,input,button{
+	font-family: 'Open Sans', sans-serif;
+}
+/*header part css here*/
+header{
+	width: 100%;
+	background-image: url(../img/banner/banner-2.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.navbar-brand{
+	color: white !important;
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.nav-link{
+	color: white !important;
+}
+.nav-link::before{
+	content: '';
+	color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0%;
+	background: #ffb233;
+	transition: 0.5s ease-in-out;
+}
+.nav-link:hover::before{
+	width: 100%;
+	transition: 0.5s ease-in-out;
+}
+
+.nav-item{
+	margin-left: 55px;
+	position: relative;
+}
+
+.navbar{
+	padding: 32px 16px;
+}
+.banner-text h1{
+	color: white;
+	font-weight: 600;
+	font-size: 50px;
+	letter-spacing: 5px;
+}
+.banner-text h4{
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 110px;
+}
+.banner a i{
+	height: 35px;
+	width: 35px;
+	background: #ffb233;
+	color: white;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 35px;
+}
+.banner{
+	text-align: center;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+}
+
+/*about me section css here*/
+.about-me{
+	width: 100%;
+	background: white;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.about-me .title{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 50px;
+}
+
+.about-me .sub-title{
+	color: #ababab;
+	margin: 40px 0;
+	font-weight: 600;
+}
+
+.about-me .desc{
+	padding: 0 100px;
+	color: #3f3f3f;
+}
+.social-icon{
+	margin: 50px 0;
+}
+.social-icon ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 30px;
+}
+.social-icon ul li a i{
+	height: 35px;
+	width: 35px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 35px;
+	background: #c6c6c5;
+	color: white;
+}
+.social-icon ul li a i:hover{
+	background: #ffb233;
+}
+.contact-btn button{
+	padding: 19px 60px;
+	background: transparent;
+	border: 2px solid #51a351;
+	border-radius: 7px;
+	color: #51a351;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 20px;
+	transition: 0.5s ease-in-out;
+}
+.contact-btn button:hover{
+	background: #51a351;
+	border: 2px solid #51a351;
+	color: white;
+	transition: 0.5s ease-in-out;
+
+}
